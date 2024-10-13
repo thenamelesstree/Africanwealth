@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Munhumutapa.Africa Blockchain</title>
+    <title>Africanwealth Blockchain</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="munhumutapa, mutapa, blockchain, africa, zimbabwe, s.a, south africa, digital, economy, digital, finance, banking, asset, decentralized, technology, currency">
-    <meta content="" name="Munhumutapa Alphablockchain">
+    <meta content="" name="africanwealth, shamwaripay, blockchain, africa, zimbabwe, s.a, south africa, digital, economy, finance, banking, digital asset, decentralized, technology, currency">
+    <meta content="" name="Africanwealth blockchain">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -48,184 +48,65 @@
     
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0" id="home">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="#" class="navbar-brand p-0 text-dark fw-medium">
-                	<img src="img/favicon.png">Munhumutapa Explorer
+        	<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="#" class="navbar-brand p-0 text-xs">
+                	<img src="img/favicon.png">
                 </a>
 			</nav>
-			<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">	
-				<a data-bs-toggle='collapse' class='collapse-link' data-bs-target='#collapsegetAccount' href='#'><button class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Accounts<i class="caret"></i></button></a>
-
-			<a data-bs-toggle='collapse' class='collapse-link' data-bs-target='#collapsegetBlock' href='#'><button class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated">Blocks<i class="caret"></i></button></a>
-
-			<a data-bs-toggle='collapse' class='collapse-link' data-bs-target='#collapsegetTransaction' href='#'><button class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInLeft">Transactions<i class="caret"></i></button></a>
-			</nav>
-
-<div class="container">
-<span style='float:right;font-weight:normal;font-size:14px;'>
-<a href='/test?requestType=getAccount' target='_blank' style='font-weight:normal;font-size:14px;color:#777;'></a> &nbsp;&nbsp;
-</span>
-</h4>
-</div> <!-- container-heading -->
-<div id='collapsegetAccount' class='container-collapse collapse'>
-<div class='container py-5 px-lg-5'>
-<form action='https://139.185.38.125:22024/nxt' method='POST' onsubmit='return ATS.submitForm(this, [])'>
-<input type='hidden' id='formAction' value='https://139.185.38.125:22024/nxt'/>
-<input type='hidden' name='requestType' value='getAccount'/>
-<div class='col-xs-12 col-lg-6' style='min-width: 40%;'>
-<table class='table'>
-<tr class='api-call-input-tr'>
-<td>account:</td>
-<td><input type='text' name='account' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeLessors:</td>
-<td><input type='text' name='includeLessors' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeAssets:</td>
-<td><input type='text' name='includeAssets' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeCurrencies:</td>
-<td><input type='text' name='includeCurrencies' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeEffectiveBalance:</td>
-<td><input type='text' name='includeEffectiveBalance' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireBlock:</td>
-<td><input type='text' name='requireBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireLastBlock:</td>
-<td><input type='text' name='requireLastBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr>
-<td colspan='2'><input type='submit' class='btn btn-secondary-gradient' value='submit'/></td>
-</tr>
-</table>
-</div>
-<div class='col-xs-12 col-lg-6' style='min-width: 50%;'>
-<h5 style='margin-top:0px;'>
-<span style='float:right;' class='page-link'></span>
-Response</h5>
-<pre class='container-fluid'><code class='result'>JSON response</code></pre>
-</div>
-</form>
-</div> <!-- container py-5 px-lg-5 -->
-</div> <!-- container-collapse -->
-</div> <!-- container -->
+			
+			<div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5 mb-4">
+                    	<div class="container col-lg-12 d wow animated slideInDown text-center">	
+							<h1 class="text-white">Africanwealth Transaction Explorer</h1>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        	
+        <div class="container-xxl py-5 px-lg-5">
+        	<div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+        		<ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+        			<li class="nav-item">
+        				<button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Accounts</button>
+        			</li>
+        			<li class="nav-item">
+        				<button class="nav-link" data-bs-toggle="pill" href="#tab-2">Blocks</button>
+                    </li>
+                    <li class="nav-item">
+                    	<button class="nav-link" data-bs-toggle="pill" href="#tab-2">Transactions</button>
+                    </li>
+                 </ul>
+                    
+                 <div class="tab-content text-center">
+                 	<div id="account_search" class="container-fluid text-center tab-pane fade show p-0 active">
+                 		<div class='bg-light rounded container py-5 px-lg-5'>
+                    		<form action='https://139.185.38.125:22024/nxt' method='POST' onsubmit='return ATS.submitForm(this, [])' class='active'>                              		                             <input type='hidden' id='formAction' value='https://139.185.38.125:22024/nxt'/>
+								<input type='hidden' name='requestType' value='getAccount'/>
+		<div class="row g-3">
+			<div class="col-md-12 col-lg-9">
+				<div class="form-floating d-flex">
+					
+					<input class='form-control rounded-pill' type='text' name='account' placeholder='account'/>
+					<span><button type='submit' class='btn btn-secondary-gradient rounded-pill mt-2 ms-2'><i class='fa fa-search'></i></button></span>
+							</div>
+						</div>
+					</div>
+				</form>
+			 </div>
+		 </div>
+		<div class='col-xs-12 col-lg-6' style='min-width: 50%;'>
+			<h5 style='margin-top:0px;'><span class='text-center'></span>
+Results</h5>
+			<pre class='container-fluid'><code class='result'>JSON response</code></pre>
+			</div>
+		</div>
+	</div>
 	
-
-<span style='float:right;font-weight:normal;font-size:14px;'>
-<a href='/test?requestType=getTransaction' target='_blank' style='font-weight:normal;font-size:14px;color:#777;'></a> &nbsp;&nbsp;
-</span>
-</h4>
-</div> <!-- container-heading -->
-<div id='collapsegetTransaction' class='container-collapse collapse'>
-<div class='container py-5 px-lg-5'>
-<form action='https://139.185.38.125:22024/nxt' method='POST' onsubmit='return ATS.submitForm(this, [])'>
-<input type='hidden' id='formAction' value='https://139.185.38.125:22024/nxt'/>
-<input type='hidden' name='requestType' value='getTransaction'/>
-<div class='col-xs-12 col-lg-6' style='min-width: 40%;'>
-<table class='table'>
-<tr class='api-call-input-tr'>
-<td>chain:</td>
-<td><input type='text' name='chain' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>fullHash:</td>
-<td><input type='text' name='fullHash' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includePhasingResult:</td>
-<td><input type='text' name='includePhasingResult' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireBlock:</td>
-<td><input type='text' name='requireBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireLastBlock:</td>
-<td><input type='text' name='requireLastBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr>
-<td colspan='2'><input type='submit' class='btn btn-secondary-gradient' value='submit'/></td>
-</tr>
-</table>
-</div>
-<div class='col-xs-12 col-lg-6' style='min-width: 50%;'>
-<h5 style='margin-top:0px;'>
-<span style='float:right;' class='page-link'></span>
-Response</h5>
-<pre class='container-fluid'><code class='result'>JSON response</code></pre>
-</div>
-</form>
-</div> <!-- container py-5 px-lg-5 -->
-</div> <!-- container-collapse -->
-</div> <!-- container -->
-	
-
-<span style='float:right;font-weight:normal;font-size:14px;'>
-<a href='/test?requestType=getBlock' target='_blank' style='font-weight:normal;font-size:14px;color:#777;'></a> &nbsp;&nbsp;
-</span>
-</h4>
-</div> <!-- container-heading -->
-<div id='collapsegetBlock' class='container-collapse collapse'>
-<div class='container py-5 px-lg-5'>
-<form action='https://139.185.38.125:22024/nxt' method='POST' onsubmit='return ATS.submitForm(this, [])'>
-<input type='hidden' id='formAction' value='https://139.185.38.125:22024/nxt'/>
-<input type='hidden' name='requestType' value='getBlock'/>
-<div class='col-xs-12 col-lg-6' style='min-width: 40%;'>
-<table class='table'>
-<tr class='api-call-input-tr'>
-<td>block:</td>
-<td><input type='text' name='block' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>height:</td>
-<td><input type='text' name='height' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>timestamp:</td>
-<td><input type='text' name='timestamp' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeTransactions:</td>
-<td><input type='text' name='includeTransactions' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>includeExecutedPhased:</td>
-<td><input type='text' name='includeExecutedPhased' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireBlock:</td>
-<td><input type='text' name='requireBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr class='api-call-input-tr'>
-<td>requireLastBlock:</td>
-<td><input type='text' name='requireLastBlock' style='width:100%;min-width:200px;'/></td>
-</tr>
-<tr>
-<td colspan='2'><input type='submit' class='btn btn-secondary-gradient' value='submit'/></td>
-</tr>
-</table>
-</div>
-<div class='col-xs-12 col-lg-6' style='min-width: 50%;'>
-<h5 style='margin-top:0px;'>
-<span style='float:right;' class='page-link'></span>
-Response</h5>
-<pre class='container-fluid'><code class='result'>JSON response</code></pre>
-</div>
-</form>
-</div> <!-- container py-5 px-lg-5 -->
-</div> <!-- container-collapse -->
-</div> <!-- container -->
-	
-<script src='js/3rdparty/jquery.js'></script>
-<script src='js/3rdparty/bootstrap.js' type='text/javascript'></script>
+	<script src='js/3rdparty/jquery.js'></script>
+	<script src='js/3rdparty/bootstrap.js' type='text/javascript'></script>
 <script src='js/3rdparty/highlight.pack.js' type='text/javascript'></script>
 <script src='js/ats.js' type='text/javascript'></script>
 <script src='js/ats.util.js' type='text/javascript'></script>
@@ -238,8 +119,7 @@ $(document).ready(function() {    $('#nodeType').val('Full Node');    $('#servle
 });
 </script>
 <script>
-$(document).ready(function() {    $('#nodeType').val('Full Node');    $('#servletPath').val('/test');    ATS.apiCalls.push('deleteAccountProperty');
-    ATS.apiCalls.push('deleteContractReference');
+$(document).ready(function() {    $('#nodeType').val('Full Node');    $('#servletPath').val('/api');
     ATS.apiCalls.push('getAccount');
     ATS.apiCalls.push('getAccountAssetCount');
     ATS.apiCalls.push('getAccountAssets');
@@ -275,15 +155,7 @@ $(document).ready(function() {    $('#nodeType').val('Full Node');    $('#servle
     ATS.apiCalls.push('getUnconfirmedTransactions');
     ATS.apiCalls.push('getVoterPhasedTransactions');
     ATS.apiCalls.push('rsConvert');
-    ATS.apiCalls.push('saveFundingMonitorsEncrypted');
     ATS.apiCalls.push('searchAccounts');
-    ATS.apiCalls.push('sendMoney');
-    ATS.apiCalls.push('setAccountInfo');
-    ATS.apiCalls.push('setAccountProperty');
-    ATS.apiCalls.push('setContractReference');
-    ATS.apiCalls.push('startFundingMonitor');
-    ATS.apiCalls.push('startFundingMonitorsEncrypted');
-    ATS.apiCalls.push('stopFundingMonitor');
 });
 </script>
 <script>
