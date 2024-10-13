@@ -1,1 +1,1 @@
-Munhumutapa Africa Blockchain
+Africanwealth Blockchain
